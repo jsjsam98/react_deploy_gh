@@ -17,7 +17,7 @@ export const DataProvider = ({ children }) => {
 	const navigate = useNavigate();
 	const { width } = useWindowSize();
 	const { data, fetchError, isLoading } = useAxiosFetch(
-		"http://localhost:3500/posts"
+		"https://my-json-server.typicode.com/jsjsam98/myDB/posts"
 	);
 
 	useEffect(() => {
